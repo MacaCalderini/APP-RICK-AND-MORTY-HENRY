@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validate } from "./validation";
 import s from "./Form.module.css";
+import sbtn from "../search/searchBar.module.css"
 
 export default function Form(props) {
   const [userData, setUserData] = useState({
@@ -47,7 +48,7 @@ export default function Form(props) {
             />
           </div>
 
-          <button type="submit">Ingresar</button>
+          <button className={sbtn.btn} type="submit">Ingresar</button>
         </form>
       </div>
     </div>

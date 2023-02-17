@@ -5,16 +5,13 @@
   justify-content: center;
 
   min-height: 100%;
-  margin: 0 auto; /* Centramos el formulario */
-  width: 200px;   /* Sin ancho no podemos centrar el formulario */
-  background-color: #00b0c793; /* Color blanco para el formulario */
-  padding: 2px; /* separamos los bordes del form del resto de elementos */
-  border-radius: 10px; /* Redondeamos los bordes del form */
+  margin: 0 auto; 
+  width: 200px; 
+  background-color: #00b0c778; 
+  padding: 2px; 
+  border-radius: 10px; 
 }
 
 .letra{
   color: #6CD25A;
-}
-.button{
-  
 }
