@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 export default function Nav(props) {
   return (
     <div className={style.container}>
-
       <Link className={style.link} to="/home">
         Home
       </Link>
@@ -15,15 +14,15 @@ export default function Nav(props) {
         About
       </Link>
 
+      <Link className={style.link} to="/Favorite">
+        Favorite
+      </Link>
+      
       <Link className={style.link} to="/">
         Logout
       </Link>
 
-      <Link className={style.link} to="/Favorite">
-        Favorite
-      </Link>
-
-      <SearchBar onSearch={props.onSearch}  random={props.random}/>
+      <SearchBar onSearch={props.onSearch} random={props.random} />
     </div>
   );
 }

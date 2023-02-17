@@ -2,6 +2,7 @@ import React from "react";
 import { connect, useDispatch } from "react-redux";
 import Card from "../card/Card";
 import { orderCards, filterCards } from "../Redux/Actions";
+import s from "./favorite.module.css"
 
 export function Favorites({ myFavorites }) {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ export function Favorites({ myFavorites }) {
   }
 
   return (
-    <div>
+    <div >
       <select name="order" onClick={handleClick}>
         <option value="" disabled>
           Ordenar...
@@ -32,7 +33,7 @@ export function Favorites({ myFavorites }) {
         <option value="unknown">Unknow</option>
       </select>
 
-      <div>
+      <div className={s.gridCards}>
         {myFavorites.length === 0 ? (
           <p style={{ color: "violet", marginTop: "150px", fontSize: "24px" }}>
             ¡Agrega un favorito!

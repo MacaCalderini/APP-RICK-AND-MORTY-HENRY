@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validate } from "./validation";
-import style from "./Form.module.css";
+import s from "./Form.module.css";
 
 export default function Form(props) {
   const [userData, setUserData] = useState({
@@ -24,8 +24,8 @@ export default function Form(props) {
   };
 
   return (
-    <div className={style.wrapper}>
-      <div className={style.formContent}>
+    <div className={s.divPrincipal}>
+      <div className={s.letra}>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="">Username: </label>

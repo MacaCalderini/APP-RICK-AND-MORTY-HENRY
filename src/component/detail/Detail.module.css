@@ -1,0 +1,48 @@
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerCard{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 600px; 
+    background-color: rgba(39, 139, 124, 0.934);
+    color: rgb(255, 255, 255);
+    margin: 5px;
+
+    border-radius: 10px;
+
+
+  }
+  .atributo{
+
+    border: #0ba76b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    justify-content: space-evenly;
+  }
+
+.img {
+  position: relative;
+  align-self: center;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+
+}
+.backBtn {
+    border: 1px solid rgb(17, 187, 99);
+    background-color: rgba(31, 125, 138, 0.674);
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+
+  }

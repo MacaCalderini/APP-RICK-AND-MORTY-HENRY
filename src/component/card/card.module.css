@@ -1,5 +1,8 @@
 .card {
-  width: 250px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: min-content;
   border: 1px solid #09851e;
   border-radius: 10px;
   
@@ -35,10 +38,14 @@
 }
 
 .img {
+  position: relative;
+  align-self: center;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 
-  border-radius: 10px 10px 10px 10px;
-  width: 95%;
-  margin: auto;
+
 }
 
 .btn {

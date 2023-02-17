@@ -11,12 +11,12 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div className={styled.input}>
-      <input type="search" placeholder="Search" onChange={handleChange} />
+    <div>
+      <input  className={styled.input} type="search" placeholder="Search" onChange={handleChange} />
       <button className={styled.btn} onClick={() => props.onSearch(character)}>
         Add
       </button>
-      <button onClick={props.random}>Random</button>
+      <button  className={styled.btn}  onClick={props.random}>Random</button>
     </div>
   );
 }

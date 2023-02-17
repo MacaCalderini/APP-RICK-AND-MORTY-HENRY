@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
+import s from "./Detail.module.css";
 
 export default function Detail() {
   const { detailId } = useParams();
@@ -27,18 +27,25 @@ export default function Detail() {
   }, [detailId]);
 
   return (
-    <div>
-      <div>
-        <h3>Nombre: {character.name}</h3>
-        <h5>Status: {character.status}</h5>
-        <h5>Especie: {character.species}</h5>
-        <h5>Genero: {character.gender}</h5>
-        <h5>Origin: {character.origin?.name}</h5>
+    <div className={s.container}>
+      <div className={s.containerCard}>
+        <div className={s.atributo}>
+          <h4>Nombre: {character.name}</h4>
+
+          <h4>Status: {character.status}</h4>
+          <h4>Especie: {character.species}</h4>
+          <h4>Genero: {character.gender}</h4>
+          <h4>Origin: {character.origin?.name}</h4>
+        </div>
+        <div>
+          <img className={s.img} src={character.image} alt={character.name} />
+        </div>
+        
       </div>
-      <div>
-        <img src={character.image} alt={character.name} />
-      </div>
-      <button onClick={handleBack}>Go back to Home</button>;
+      <button className={s.backBtn} onClick={handleBack}>
+        Go back to Home
+      </button>
+
     </div>
   );
 }
