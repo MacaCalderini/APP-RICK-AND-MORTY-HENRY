@@ -1,0 +1,61 @@
+.card {
+  width: 250px;
+  border: 1px solid #09851e;
+  border-radius: 10px;
+  
+  background-image: radial-gradient(
+    circle at 120.71% 50%,
+    #ffffa1 0,
+    #f5ffa0 6.25%,
+    #e4ffa0 12.5%,
+    #d2ffa1 18.75%,
+    #bdffa3 25%,
+    #a7fda6 31.25%,
+    #8cfaaa 37.5%,
+    #6cf7af 43.75%,
+    #3cf2b5 50%,
+    #00edbc 56.25%,
+    #00e8c6 62.5%,
+    #00e4d0 68.75%,
+    #00dfdc 75%,
+    #00dbe9 81.25%,
+    #00d7f5 87.5%,
+    #00d3ff 93.75%,
+    #00d0ff 100%
+  );
+
+
+}
+.card h1 {
+  color: white;
+  
+}
+.card h2 {
+  color: white;
+}
+
+.img {
+
+  border-radius: 10px 10px 10px 10px;
+  width: 95%;
+  margin: auto;
+}
+
+.btn {
+  position: static;
+  float: right;
+  border-radius: 8px;
+  border-color: #09441d56;
+
+  margin: 5px 5px 0px 0px;
+}
+.btn:hover {
+  background-color: #37d378;
+  color: white;
+}
+
+.genderSpecies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

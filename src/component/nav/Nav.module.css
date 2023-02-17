@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+}
+.link {
+  float: left;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 4px 10px;
+  text-decoration: none;
+  background-color: rgba(8, 158, 151, 0.514);
+  border: 0px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 6px;
+  margin: 5px 0px 5px 0px;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+.link:hover {
+  background-color: #37d378;
+  color: white;
+}

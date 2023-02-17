@@ -1,0 +1,22 @@
+.btn {
+  background-color: rgba(8, 158, 151, 0.658);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  font-weight: lighter;
+  font-size: 12px;
+  padding: 6px ;
+  margin: 5px 0px 5px 0px;
+
+}
+.btn:hover {
+  background-color: #37d378;
+  color: white;
+}
+.input {
+  margin-left: 6px;
+  padding: 1px;
+  border-radius: 5px;
+  
+}
